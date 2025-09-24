@@ -8,8 +8,13 @@ class Artist extends Model
 {
     //
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'id',
+        'nom',
+        'cognom',
+        'nomArtistic',
+        'nacionalitat',
+        'idiomaPredominant',
+        'dataNaixement',
+        'seguidors'
     ];
 }
