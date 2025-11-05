@@ -11,7 +11,7 @@ class AlbumController extends Controller
     // GET /api/album
     public function index(Request $request)
     {
-        $album = Album::all();
+        $album = Album::with("canciones")->get();
         return response()->json($album);
         }
     // POST /api/usauri

@@ -12,4 +12,13 @@ class Genera extends Model
         'nom'
 
     ];
+    public function Genera()
+    {
+        return $this->belongsToMany(Artist::class);
+    }
+    public function Genara1()
+    {
+        return $this->hasOne(Cancions::class);
+    }
+
 }

@@ -15,8 +15,12 @@ class Llistes extends Model
         'publica',
         'usuari_id'
     ];
-    public function usuari()
+    public function Llistes()
     {
-        return $this->belongsTo(Usuari::class, 'usuari_id');
+        return $this->belongsToMany(Cancion::class);
+    }
+    public function Llistes1()
+    {
+        return $this->hasMany(Usuari::class);
     }
 }

@@ -16,13 +16,13 @@ class Cancion extends Model
         'album_id'
 
     ];
-    public function genera()
+    public function Cancion()
     {
-        return $this->belongsTo(Genera::class, 'genera_id');
+        return $this->belongsToMany(Llistes::class);
     }
-
-    public function albun()
+    public function cancions1()
     {
-        return $this->belongsTo(Album::class, 'album_id');
+        return $this->hasMany(Genera::class);
     }
+    
 }

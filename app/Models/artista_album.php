@@ -12,6 +12,7 @@ class artista_album extends Model
         'album_id'
 
     ];
+    
 
 }
 

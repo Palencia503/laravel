@@ -16,4 +16,8 @@ class Usuari extends Model
         'password',
         'seguidors'
     ];
+    public function Usuari()
+    {
+        return $this->hasOne(Llistes::class);
+    }
 }

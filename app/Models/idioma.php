@@ -10,4 +10,9 @@ class idioma extends Model
         'id',
         'nom'
     ];
+    public function Idioma()
+    {
+        return $this->hasOne(Artist::class);
+    }
+    
 }

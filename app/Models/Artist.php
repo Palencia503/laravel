@@ -19,11 +19,17 @@ class Artist extends Model
     ];
     public function Artist()
     {
-        return $this->belongsTo(Artist::class, 'artista_id');
+        return $this->belongsToMany(Album::class);
     }
-
-    public function Album()
+    public function Artist1()
     {
-        return $this->belongsTo(Album::class, 'album_id');
+        return $this->hasOne(Idioma::class);
     }
+    public function Artist2()
+    {
+        return $this->belongsToMany(Genera::class);
+    }
+    
+
+
 }
