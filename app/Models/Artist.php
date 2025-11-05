@@ -17,4 +17,13 @@ class Artist extends Model
         'dataNaixement',
         'seguidors'
     ];
+    public function Artist()
+    {
+        return $this->belongsTo(Artist::class, 'artista_id');
+    }
+
+    public function Album()
+    {
+        return $this->belongsTo(Album::class, 'album_id');
+    }
 }

@@ -8,11 +8,11 @@ use Illuminate\Validation\Rule;
 
 class IdiomaController extends Controller
 {
-    // GET /api/artists
+    // GET /api/idioma
     public function index(Request $request)
     {
-        $idiomas = Idioma::all();
-        return response()->json($idiomas);
+        $idioma = Idioma::all();
+        return response()->json($idioma);
         }
     // POST /api/usauri
     public function store(Request $request)

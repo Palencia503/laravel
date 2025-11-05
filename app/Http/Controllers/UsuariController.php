@@ -14,8 +14,8 @@ class UsuariController extends Controller
     // GET /api/artists
     public function index(Request $request)
     {
-        $artists = Usuari::all();
-        return response()->json($usuaris);
+        $usuari = Usuari::all();
+        return response()->json($usuari);
         }
     // POST /api/usauri
     public function store(Request $request)
@@ -28,7 +28,7 @@ class UsuariController extends Controller
     public function update(Request $request, Usuari $usuari)
     {
         $usuari->update($data);
-        return response()->json($usauri);
+        return response()->json($usuari);
     }
     // DELETE /api/usuaris/{usuari}
     public function destroy(Usuari $usuari)

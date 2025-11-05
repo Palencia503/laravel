@@ -8,11 +8,11 @@ use Illuminate\Validation\Rule;
 
 class AlbumController extends Controller
 {
-    // GET /api/artists
+    // GET /api/album
     public function index(Request $request)
     {
-        $albums = Album::all();
-        return response()->json($albums);
+        $album = Album::all();
+        return response()->json($album);
         }
     // POST /api/usauri
     public function store(Request $request)
